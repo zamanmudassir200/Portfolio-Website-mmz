@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(to right, #675ab3, #67f899);
+  /* height: 100vh; */
+  padding: 0 3rem;
+}
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.container h1 {
+  font-size: 2.7rem;
+  letter-spacing: 0.3rem;
+  word-wrap: normal;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100rem;
+  margin: 18rem auto;
+  padding: 3rem 1.5rem;
+  border: 0.3rem solid rgba(0, 0, 0, 0.575);
+  border-radius: 3rem;
+}
+.container p {
+  color: black;
+  font-size: 2.1rem;
+}
+.copyDiv {
+  font-size: 2rem;
+  background: #00000088;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 2.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: copy;
+  transition: all 0.2s ease-in;
+}
+.copyDiv:hover {
+  background: #0000005b;
+}
+button {
+  margin: 0 2rem;
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 1.4rem rgba(0, 0, 0, 0.685);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 610px) {
+  .container h1 {
+    font-size: 2.2rem;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 1.7rem;
+  }
+  .container .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .btns button {
+    font-size: 1.6rem;
+    padding: 1.5rem 2.5rem;
+  }
+  .container p {
+    font-size: 1.5rem;
+  }
+  .container .copyDiv {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 337px) {
+  .container h1 {
+    font-size: 1.35rem;
+  }
+}

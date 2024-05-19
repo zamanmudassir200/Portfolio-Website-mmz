@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(158, 127, 127, 0.9),
+    rgba(113, 113, 138, 0.9)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  font-size: 30px;
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  place-content: center;
+  max-width: 1000px;
+  margin: 0px auto;
+  /* border: 4px dotted black; */
+  height: 600px;
+  border-radius: 10px;
+}
+.game_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.start_btn {
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-color: rgba(0, 255, 255, 0.545);
+
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.start_btn:hover {
+  background-color: aqua;
+  border: 2px solid black;
+  transition: 0.2s all ease-in-out;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container h1 {
+    font-size: 0.89em;
+    text-align: center;
+  }
+  .container p {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .start_btn {
+    font-size: 0.4em;
+    padding: 10px 20px;
+  }
+}
